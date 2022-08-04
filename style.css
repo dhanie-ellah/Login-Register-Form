@@ -180,3 +180,36 @@ p span{
      background-color: white;
      color: black;
 }
+
+@media(max-width:750px){
+     body{
+          width: 90%;
+          margin: 15px;
+     }
+     form{
+          width: 100%;
+          padding-left: 15px;
+          padding-right: 15px;
+     }
+
+     .toggle-btn i{
+          font-size: 25px;
+     }
+
+     h1{
+          font-size: 30px;
+     }
+
+     label{
+          font-size: 10px;
+          margin-bottom: 3px;
+     }
+
+     input{
+          margin-bottom: 5px;
+     }
+
+     input::placeholder{
+          font-size: 10px;
+     }
+}
