@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login/Register Form</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+
+     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="body" id="body">
+     <form class="register" id="register-form" onsubmit="registeruser(event)" method="post">
+          <div class="heading">
+               <h1>REGISTER</h1>
+               <div class="toggle-btn">
+                    <!-- DARK THEME ON -->
+                    <i class='bx bxs-toggle-right dark' id="dark-register"></i>
+                    <!-- LIGHT THEME ON -->
+                    <i class='bx bx-toggle-left light' id="light-register"></i>
+               </div>
+          </div>
+          <!-- <hr> -->
+          <label for="firstName">First Name</label>
+          <input type="text" placeholder="First Name" required>
+
+          <label for="lastName">Last Name</label>
+          <input type="text" placeholder="Last Name" required>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" placeholder="Phone number" required id="number">
+          <p id="number-error"></p>
+
+          <label for="email">Email Address</label>
+          <input type="email" placeholder="example@email.com" required>
+
+          <label for="firstName">Password</label>
+          <input type="password" placeholder="Create a password" required>
+
+          <label for="firstName">Confirm Password</label>
+          <input type="password" placeholder="Confirm your password" required>
+
+          <p>Have an account? <span id="login">Login</span></p>
+
+          <input type="submit" value="Register" class="submit">
+     </form>
+
+     <form class="login" id="login-form" onsubmit="loginuser(event)" method="post">
+          <div class="heading">
+               <h1>LOGIN</h1>
+               <div class="toggle-btn">
+                    <!-- DARK THEME ON -->
+                    <i class='bx bxs-toggle-right dark' id="dark-login"></i>
+                    <!-- LIGHT THEME ON -->
+                    <i class='bx bx-toggle-left light' id="light-login"></i>
+               </div>
+          </div>
+          <!-- <hr> -->
+          <label for="email">Email Address or Phone Number</label>
+          <input type="text" placeholder="example@email.com" required>
+
+          <label for="firstName">Password</label>
+          <input type="password" placeholder="Enter your password" required>
+
+          <p>New here? <span id="register">Register</span></p>
+
+          <input type="submit" value="login" class="submit">
+     </form>
+
+     <script src="script.js"></script>
+
+</body>
+</html>
